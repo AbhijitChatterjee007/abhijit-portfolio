@@ -102,13 +102,6 @@ const Experience = () => {
             );
           })}
         </div>
-        <Fade bottom duration={1000} delay={1000} distance="30px">
-          <p className="hero-cta justify-content-center">
-            <Link className="cta-btn cta-btn--hero" to="/">
-              Go back
-              </Link>
-          </p>
-        </Fade>
       </Container>
     </section>
   );
