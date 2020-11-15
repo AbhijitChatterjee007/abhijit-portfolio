@@ -8,6 +8,9 @@
     width: 60%;
     height: auto;
     margin: auto;
+    @include respond(phone) {
+        width: 95%;
+      }
 }
 
 .img {

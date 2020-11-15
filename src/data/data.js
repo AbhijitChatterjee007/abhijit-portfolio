@@ -44,7 +44,7 @@ export const projectsData = [
     img: goldman,
     title: 'Hydra',
     info: 'A J2EE and Spring Micro-service based Trade processing system at Goldman Sachs',
-    info2: 'Created Multiple services to onboard new flows/ Supoort existing flows. Wrote logic to add multiple funcationalities on existing flows in Fixed Income and Equities Domain. Collaborated on all stages of development lifecycle, from requirement gathering to production releases. Followed Agile Methodologies and focused on TDD, thereby creating detailed JUnit tests and Alpacas(GS Internal testing framework) for every functionality of the code.',
+    info2: 'Created Multiple services to onboard new flows/ Suport existing flows. Wrote logic to add multiple funcationalities on existing flows in Fixed Income and Equities Domain. Collaborated on all stages of development lifecycle, from requirement gathering to production releases. Followed Agile Methodologies and focused on TDD, thereby creating detailed JUnit tests and Alpacas(GS Internal testing framework) for every functionality of the code.',
     repo: '', 
   },
   {

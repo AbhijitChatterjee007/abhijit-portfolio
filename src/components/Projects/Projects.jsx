@@ -29,11 +29,23 @@ const Projects = () => {
   return (
     <section className="projects" id="projects">
       <Fade bottom duration={1000} delay={1000} distance="30px">
-        <p className="hero-cta">
-          <Link className="cta-btn cta-btn--hero" to="/">
-            Go back
+        <div className="skills__introButtons">
+          <p className="hero-cta">
+            <Link className="cta-btn cta-btn--hero" to="/">
+              Go back
               </Link>
-        </p>
+          </p>
+          <p className="hero-cta">
+            <Link className="cta-btn cta-btn--hero" to="/skills">
+              Skills
+              </Link>
+          </p>
+          <p className="hero-cta">
+            <Link className="cta-btn cta-btn--hero" to="/experience">
+              Experience
+              </Link>
+          </p>
+        </div>
       </Fade>
       <Container>
         <div className="project-wrapper">
