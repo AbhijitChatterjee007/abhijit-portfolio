@@ -13,6 +13,7 @@ import Focus from './components/FocusPage/Focus';
 import { PortfolioProvider } from './context/context';
 
 import { heroData, aboutData, projectsData, contactData, footerData, experienceData, certificationData, focusData } from './data/data';
+import { Navbar } from 'react-bootstrap';
 
 function App() {
   const [hero, setHero] = useState({});
@@ -41,6 +42,7 @@ function App() {
 
   return (
     <PortfolioProvider value={{ hero, about, projects, contact, footer, experience, certificates, focus}}>
+    <Navbar />
       <Router>
         <Switch>
           <Route path="/projects">
@@ -59,8 +61,8 @@ function App() {
             <Focus />
           </Route>
           <Route path="/">
-            <Hero />
-            <About />
+            {/* <Hero />
+            <About /> */}
           </Route>
         </Switch>
         <Contact />

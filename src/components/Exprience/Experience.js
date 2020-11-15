@@ -8,7 +8,6 @@ import Title from '../Title/Title';
 
 const Experience = () => {
   const { experience } = useContext(PortfolioContext);
-  console.log(experience);
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
