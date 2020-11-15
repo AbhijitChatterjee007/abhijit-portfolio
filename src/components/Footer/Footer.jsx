@@ -1,23 +1,23 @@
 import React, { useContext } from 'react';
-import { useLocation } from 'react-router-dom'
 import { Container } from 'react-bootstrap';
-import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 
 
 const Footer = () => {
   const { footer } = useContext(PortfolioContext);
   const { networks } = footer;
-  var pathname = `${useLocation().pathname}`;
-  console.log(pathname);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
   return (
     <footer className="footer navbar-static-bottom">
       <Container>
         <span className="back-to-top">
-          <Link to={pathname} smooth duration={1000}>
+          <div onClick= {scrollToTop} smooth duration={1000}>
             <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
-          </Link>
+          </div>
         </span>
         <div className="social-links">
           {networks &&
