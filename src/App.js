@@ -1,24 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Hero from './components/Hero/Hero';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
+import Projects from './components/Projects/Projects'
+import Skills from './components/Skills/Skills'
+
+import { PortfolioProvider } from './context/context';
+
+import { heroData, aboutData, projectsData, contactData, footerData } from './data/data';
 
 function App() {
+  const [hero, setHero] = useState({});
+  const [about, setAbout] = useState({});
+  const [projects, setProjects] = useState([]);
+  const [contact, setContact] = useState({});
+  const [footer, setFooter] = useState({});
+
+  useEffect(() => {
+    setHero({ ...heroData });
+    setAbout({ ...aboutData });
+    setProjects([...projectsData]);
+    setContact({ ...contactData });
+    setFooter({ ...footerData });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
+      <Router>
+        <Switch>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+          <Route path="/skills">
+            <Skills />
+          </Route>
+          <Route path="/">
+            <Hero />
+            <About />
+          </Route>
+        </Switch>
+        <Contact />
+        <Footer />
+      </Router>
+    </PortfolioProvider>
   );
 }
 

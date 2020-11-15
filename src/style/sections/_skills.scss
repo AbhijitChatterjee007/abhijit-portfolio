@@ -1,0 +1,64 @@
+.focus {
+  transition: transform 0.3s;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+   transition: all 0.2s ease-out;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.5s box-shadow,
+  0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  display: flex ;
+  width: 100%;
+  border: none;
+  margin-bottom: 40px;
+
+}
+.cardDeck {
+  justify-content: space-evenly;
+}
+
+.focus:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.image-style {
+  width: 3em;
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.font-details-b {
+  font-size: 3em;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.card-text {
+  align-items: flex-start;
+  margin: 20px;
+  background: linear-gradient(
+    to right, 
+    #fff 0%, 
+    #fff 50%, 
+    #02aab0 0%, 
+    #02aab0 100%
+  );
+}
+.button {
+  position: sticky;
+}
+
+.title {
+  margin: 0px;
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
