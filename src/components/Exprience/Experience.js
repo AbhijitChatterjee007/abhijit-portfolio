@@ -6,8 +6,9 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 
-const Projects = () => {
-  const { projects } = useContext(PortfolioContext);
+const Experience = () => {
+  const { experience } = useContext(PortfolioContext);
+  console.log(experience);
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -27,7 +28,7 @@ const Projects = () => {
   }, [])
 
   return (
-    <section className="projects" id="projects">
+    <section className="experience" id="experience">
       <Fade bottom duration={1000} delay={1000} distance="30px">
         <p className="hero-cta">
           <Link className="cta-btn cta-btn--hero" to="/">
@@ -36,10 +37,10 @@ const Projects = () => {
         </p>
       </Fade>
       <Container>
-        <div className="project-wrapper">
-          <Title title="Projects" />
-          {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+        <div className="experience-wrapper">
+          <Title title="Work Experience" />
+          {experience.map((experience) => {
+            const { title, info, date, url, img, id } = experience;
             return (
               <Row key={id}>
                 <Col lg={4} sm={12}>
@@ -50,34 +51,14 @@ const Projects = () => {
                     delay={500}
                     distance="30px"
                   >
-                    <div className="project-wrapper__text">
-                      <h3 className="project-wrapper__text-title">{title}</h3>
+                    <div className="experience-wrapper__text">
+                      <h3 className="experience-wrapper__text-title">{title}</h3>
                       <div>
-                        <p>
-                          {info}
+                        <p className="text-muted">
+                          {date}
                         </p>
-                        <p className="mb-4">{info2 || ''}</p>
+                        <p className="mb-4">{info || ''}</p>
                       </div>
-                      {url && (<a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
-                      >
-                        See Live
-                      </a>
-                      )}
-
-                      {repo && (
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
-                          href={repo}
-                        >
-                          Source Code
-                        </a>
-                      )}
                     </div>
                   </Fade>
                 </Col>
@@ -89,7 +70,7 @@ const Projects = () => {
                     delay={1000}
                     distance="30px"
                   >
-                    <div className="project-wrapper__image">
+                    <div className="experience-wrapper__image">
                       <a
                         href={url}
                         target="_blank"
@@ -110,7 +91,7 @@ const Projects = () => {
                           }}
                         >
                           <div data-tilt className="thumbnail rounded">
-                            <Image alt="project photo" src={img} />
+                            <Image alt="experience photo" src={img} />
                           </div>
                         </Tilt>
                       </a>
@@ -133,4 +114,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Experience;

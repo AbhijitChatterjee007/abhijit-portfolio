@@ -1,0 +1,34 @@
+
+.certificates__container {
+    align-items: center;
+}
+
+.certificates__carousel {
+    background-color: #02aab0 ;
+    width: 60%;
+    height: auto;
+    margin: auto;
+}
+
+.img {
+    object-fit: contain;
+}
+.title {
+    margin: 0px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+  }
+
+  .carousel-indicators {
+      background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .carousel-control-next-icon{
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .carousel-control-prev-icon{
+    background-color: rgba(0, 0, 0, 0.2);
+  }

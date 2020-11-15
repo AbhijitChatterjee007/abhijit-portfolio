@@ -28,274 +28,286 @@ export const Skills = () => {
   }, [])
 
   return (
-    <section id ="skills">
+    <section id="skills">
       <Container className="pt-3 pb-3 container">
-      <Fade bottom duration={1000} delay={1000} distance="30px">
-        <p className="hero-cta justify-content-center">
-          <Link className="cta-btn cta-btn--hero button" to="/">
-            Go back
+        <Fade bottom duration={1000} delay={1000} distance="30px">
+          <div className="skills__introButtons">
+            <p className="hero-cta justify-content-center">
+              <Link className="cta-btn cta-btn--hero" to="/">
+                Go back
               </Link>
-        </p>
-      </Fade>
-      <Title title="Skills" />
-      <CardDeck className="cardDeck">
-        <Row className="d-flex justify-content-center">
-          {/* Frontend */}
-          <Col md={7} lg={7}>
-            <Card className="focus thumbnail rounded mt-2 mb-2">
-              <Fade
-                right={isDesktop}
-                bottom={isMobile}
-                duration={1000}
-                delay={1000}
-                distance="30px"
-              >
-
-                <Tilt
-                  options={{
-                    reverse: false,
-                    max: 8,
-                    perspective: 1000,
-                    scale: 1,
-                    speed: 300,
-                    transition: true,
-                    axis: null,
-                    reset: true,
-                    easing: 'cubic-bezier(.03,.98,.52,.99)',
-                  }}
+            </p>
+            <p className="hero-cta justify-content-center">
+              <Link className="cta-btn cta-btn--hero" to="/certifications">
+                Want to view Certifications?
+              </Link>
+            </p>
+            <p className="hero-cta justify-content-center">
+              <Link className="cta-btn cta-btn--hero" to="/focus">
+                Current Focus!
+              </Link>
+            </p>
+          </div>
+        </Fade>
+        <Title title="Skills" />
+        <CardDeck className="cardDeck">
+          <Row className="d-flex justify-content-center">
+            {/* Frontend */}
+            <Col md={7} lg={7}>
+              <Card className="focus thumbnail rounded mt-2 mb-2">
+                <Fade
+                  right={isDesktop}
+                  bottom={isMobile}
+                  duration={1000}
+                  delay={1000}
+                  distance="30px"
                 >
-                  <Card.Body>
-                    {/* Frontend */}
-                    <h4 className="title">Frontend</h4>
-                    <hr />
-                    <Card.Text className="card-text d-flex flex-column">
-                      {skills.frontend.map((skill, index) => (
-                        <span className="p-2" key={index}>
-                          <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
-                            <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style"></Image><strong>{skill.skillName}</strong>
-                          </a>
-                        </span>
-                      ))}
-                    </Card.Text>
-                  </Card.Body>
-                </Tilt>
-              </Fade>
 
-            </Card>
-          </Col>
+                  <Tilt
+                    options={{
+                      reverse: false,
+                      max: 8,
+                      perspective: 1000,
+                      scale: 1,
+                      speed: 300,
+                      transition: true,
+                      axis: null,
+                      reset: true,
+                      easing: 'cubic-bezier(.03,.98,.52,.99)',
+                    }}
+                  >
+                    <Card.Body>
+                      {/* Frontend */}
+                      <h4 className="title">Frontend</h4>
+                      <hr />
+                      <Card.Text className="card-text d-flex flex-column">
+                        {skills.frontend.map((skill, index) => (
+                          <span className="p-2" key={index}>
+                            <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
+                              <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style"></Image><strong>{skill.skillName}</strong>
+                            </a>
+                          </span>
+                        ))}
+                      </Card.Text>
+                    </Card.Body>
+                  </Tilt>
+                </Fade>
 
-          {/* Backend */}
-          <Col md={7} lg={7}>
-            <Card className="focus thumbnail rounded mt-2 mb-2">
-              <Fade
-                right={isDesktop}
-                bottom={isMobile}
-                duration={1000}
-                delay={1000}
-                distance="30px"
-              >
+              </Card>
+            </Col>
 
-                <Tilt
-                  options={{
-                    reverse: false,
-                    max: 8,
-                    perspective: 1000,
-                    scale: 1,
-                    speed: 300,
-                    transition: true,
-                    axis: null,
-                    reset: true,
-                    easing: 'cubic-bezier(.03,.98,.52,.99)',
-                  }}
+            {/* Backend */}
+            <Col md={7} lg={7}>
+              <Card className="focus thumbnail rounded mt-2 mb-2">
+                <Fade
+                  right={isDesktop}
+                  bottom={isMobile}
+                  duration={1000}
+                  delay={1000}
+                  distance="30px"
                 >
-                  <Card.Body>
-                    <h4 className="title">Backend</h4>
-                    <hr />
-                    <Card.Text className="card-text d-flex  flex-column">
-                      {skills.backend.map((skill, index) => (
-                        <span className="p-2" key={index}>
-                          <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
-                            <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style"></Image> <strong>{skill.skillName}</strong>
-                          </a>
-                        </span>
-                      ))}
-                    </Card.Text>
-                  </Card.Body>
-                </Tilt>
-              </Fade>
 
-            </Card>
+                  <Tilt
+                    options={{
+                      reverse: false,
+                      max: 8,
+                      perspective: 1000,
+                      scale: 1,
+                      speed: 300,
+                      transition: true,
+                      axis: null,
+                      reset: true,
+                      easing: 'cubic-bezier(.03,.98,.52,.99)',
+                    }}
+                  >
+                    <Card.Body>
+                      <h4 className="title">Backend</h4>
+                      <hr />
+                      <Card.Text className="card-text d-flex  flex-column">
+                        {skills.backend.map((skill, index) => (
+                          <span className="p-2" key={index}>
+                            <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
+                              <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style"></Image> <strong>{skill.skillName}</strong>
+                            </a>
+                          </span>
+                        ))}
+                      </Card.Text>
+                    </Card.Body>
+                  </Tilt>
+                </Fade>
 
-            {/* Hosting Platforms */}
-            <Card className="focus thumbnail rounded mt-2 mb-2 ">
-              <Fade
-                right={isDesktop}
-                bottom={isMobile}
-                duration={1000}
-                delay={1000}
-                distance="30px"
-              >
+              </Card>
 
-                <Tilt
-                  options={{
-                    reverse: false,
-                    max: 8,
-                    perspective: 1000,
-                    scale: 1,
-                    speed: 300,
-                    transition: true,
-                    axis: null,
-                    reset: true,
-                    easing: 'cubic-bezier(.03,.98,.52,.99)',
-                  }}
+              {/* Hosting Platforms */}
+              <Card className="focus thumbnail rounded mt-2 mb-2 ">
+                <Fade
+                  right={isDesktop}
+                  bottom={isMobile}
+                  duration={1000}
+                  delay={1000}
+                  distance="30px"
                 >
-                  <Card.Body>
-                    <h4 className="title">Hosting Platforms</h4>
-                    <hr />
-                    <Card.Text className="card-text d-flex  flex-column">
-                      {skills.hostingPlatforms.map((skill, index) => (
-                        <span className="p-2" key={index}>
-                          <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
-                            <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style"></Image> <strong>{skill.skillName}</strong>
-                          </a>
-                        </span>
-                      ))}
-                    </Card.Text>
-                  </Card.Body>
-                </Tilt>
-              </Fade>
 
-            </Card>
-          </Col>
+                  <Tilt
+                    options={{
+                      reverse: false,
+                      max: 8,
+                      perspective: 1000,
+                      scale: 1,
+                      speed: 300,
+                      transition: true,
+                      axis: null,
+                      reset: true,
+                      easing: 'cubic-bezier(.03,.98,.52,.99)',
+                    }}
+                  >
+                    <Card.Body>
+                      <h4 className="title">Hosting Platforms</h4>
+                      <hr />
+                      <Card.Text className="card-text d-flex  flex-column">
+                        {skills.hostingPlatforms.map((skill, index) => (
+                          <span className="p-2" key={index}>
+                            <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
+                              <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style"></Image> <strong>{skill.skillName}</strong>
+                            </a>
+                          </span>
+                        ))}
+                      </Card.Text>
+                    </Card.Body>
+                  </Tilt>
+                </Fade>
 
-          {/* Programming Languages */}
-          <Col md={7} lg={7}>
-            <Card className="focus thumbnail rounded mt-2 mb-2">
-              <Fade
-                right={isDesktop}
-                bottom={isMobile}
-                duration={1000}
-                delay={1000}
-                distance="30px"
-              >
+              </Card>
+            </Col>
 
-                <Tilt
-                  options={{
-                    reverse: false,
-                    max: 8,
-                    perspective: 1000,
-                    scale: 1,
-                    speed: 300,
-                    transition: true,
-                    axis: null,
-                    reset: true,
-                    easing: 'cubic-bezier(.03,.98,.52,.99)',
-                  }}
+            {/* Programming Languages */}
+            <Col md={7} lg={7}>
+              <Card className="focus thumbnail rounded mt-2 mb-2">
+                <Fade
+                  right={isDesktop}
+                  bottom={isMobile}
+                  duration={1000}
+                  delay={1000}
+                  distance="30px"
                 >
-                  <Card.Body>
-                    <h4 className="title">Programming Languages</h4>
-                    <hr />
-                    <Card.Text className="card-text d-flex  flex-column">
-                      {skills.programmingLanguages.map((skill, index) => (
-                        <span className="p-2" key={index}>
-                          <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
-                            <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style"></Image> <strong>{skill.skillName}</strong>
-                          </a>
-                        </span>
-                      ))}
-                    </Card.Text>
-                  </Card.Body>
-                </Tilt>
-              </Fade>
 
-            </Card>
+                  <Tilt
+                    options={{
+                      reverse: false,
+                      max: 8,
+                      perspective: 1000,
+                      scale: 1,
+                      speed: 300,
+                      transition: true,
+                      axis: null,
+                      reset: true,
+                      easing: 'cubic-bezier(.03,.98,.52,.99)',
+                    }}
+                  >
+                    <Card.Body>
+                      <h4 className="title">Programming Languages</h4>
+                      <hr />
+                      <Card.Text className="card-text d-flex  flex-column">
+                        {skills.programmingLanguages.map((skill, index) => (
+                          <span className="p-2" key={index}>
+                            <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
+                              <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style"></Image> <strong>{skill.skillName}</strong>
+                            </a>
+                          </span>
+                        ))}
+                      </Card.Text>
+                    </Card.Body>
+                  </Tilt>
+                </Fade>
 
-            {/* Database */}
+              </Card>
 
-            <Card className="focus thumbnail rounded mt-2 mb-2">
-              <Fade
-                right={isDesktop}
-                bottom={isMobile}
-                duration={1000}
-                delay={1000}
-                distance="30px"
-              >
+              {/* Database */}
 
-                <Tilt
-                  options={{
-                    reverse: false,
-                    max: 8,
-                    perspective: 1000,
-                    scale: 1,
-                    speed: 300,
-                    transition: true,
-                    axis: null,
-                    reset: true,
-                    easing: 'cubic-bezier(.03,.98,.52,.99)',
-                  }}
+              <Card className="focus thumbnail rounded mt-2 mb-2">
+                <Fade
+                  right={isDesktop}
+                  bottom={isMobile}
+                  duration={1000}
+                  delay={1000}
+                  distance="30px"
                 >
-                  <Card.Body>
-                    <h4 className="title">Database</h4>
-                    <hr />
-                    <Card.Text className="card-text d-flex  flex-column">
-                      {skills.databases.map((skill, index) => (
-                        <span className="p-2" key={index}>
-                          <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
-                            <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style"></Image> <strong>{skill.skillName}</strong>
-                          </a>
-                        </span>
-                      ))}
-                    </Card.Text>
-                  </Card.Body>
-                </Tilt>
-              </Fade>
 
-            </Card>
-            {/* Version Control */}
+                  <Tilt
+                    options={{
+                      reverse: false,
+                      max: 8,
+                      perspective: 1000,
+                      scale: 1,
+                      speed: 300,
+                      transition: true,
+                      axis: null,
+                      reset: true,
+                      easing: 'cubic-bezier(.03,.98,.52,.99)',
+                    }}
+                  >
+                    <Card.Body>
+                      <h4 className="title">Database</h4>
+                      <hr />
+                      <Card.Text className="card-text d-flex  flex-column">
+                        {skills.databases.map((skill, index) => (
+                          <span className="p-2" key={index}>
+                            <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
+                              <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style"></Image> <strong>{skill.skillName}</strong>
+                            </a>
+                          </span>
+                        ))}
+                      </Card.Text>
+                    </Card.Body>
+                  </Tilt>
+                </Fade>
 
-            <Card className="focus thumbnail rounded mt-2 mb-2">
-              <Fade
-                right={isDesktop}
-                bottom={isMobile}
-                duration={1000}
-                delay={1000}
-                distance="30px"
-              >
+              </Card>
+              {/* Version Control */}
 
-                <Tilt
-                  options={{
-                    reverse: false,
-                    max: 8,
-                    perspective: 1000,
-                    scale: 1,
-                    speed: 300,
-                    transition: true,
-                    axis: null,
-                    reset: true,
-                    easing: 'cubic-bezier(.03,.98,.52,.99)',
-                  }}
+              <Card className="focus thumbnail rounded mt-2 mb-2">
+                <Fade
+                  right={isDesktop}
+                  bottom={isMobile}
+                  duration={1000}
+                  delay={1000}
+                  distance="30px"
                 >
-                  <Card.Body>
-                    <h4 className="title">Version Control</h4>
-                    <hr />
-                    <Card.Text className="card-text d-flex  flex-column">
-                      {skills.versionControl.map((skill, index) => (
-                        <span className="p-2" key={index}>
-                          <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
-                            <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style"></Image> <strong>{skill.skillName}</strong>
-                          </a>
-                        </span>
-                      ))}
-                    </Card.Text>
-                  </Card.Body>
-                </Tilt>
-              </Fade>
 
-            </Card>
-          </Col>
-        </Row>
-      </CardDeck>
-    </Container>
+                  <Tilt
+                    options={{
+                      reverse: false,
+                      max: 8,
+                      perspective: 1000,
+                      scale: 1,
+                      speed: 300,
+                      transition: true,
+                      axis: null,
+                      reset: true,
+                      easing: 'cubic-bezier(.03,.98,.52,.99)',
+                    }}
+                  >
+                    <Card.Body>
+                      <h4 className="title">Version Control</h4>
+                      <hr />
+                      <Card.Text className="card-text d-flex  flex-column">
+                        {skills.versionControl.map((skill, index) => (
+                          <span className="p-2" key={index}>
+                            <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
+                              <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style"></Image> <strong>{skill.skillName}</strong>
+                            </a>
+                          </span>
+                        ))}
+                      </Card.Text>
+                    </Card.Body>
+                  </Tilt>
+                </Fade>
+
+              </Card>
+            </Col>
+          </Row>
+        </CardDeck>
+      </Container>
     </section>
   );
 };

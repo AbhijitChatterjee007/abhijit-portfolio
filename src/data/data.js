@@ -1,7 +1,17 @@
 import { nanoid } from 'nanoid';
-import project from '../images/project.png'
+import goldman from '../images/project.png'
+import infosys from '../images/infosys.png'
 import project1 from '../images/project-1.jpg'
 import project2 from '../images/project-2.png'
+import mern from '../images/certificates/mern.png'
+import agile from '../images/certificates/agile.png'
+import pythoncore from '../images/certificates/pythoncore.png'
+import pythonoops from '../images/certificates/pythonoops.png'
+import software from '../images/certificates/software.png'
+import dbms from '../images/certificates/dbms.png'
+import rpa from '../images/focus/rpa.png'
+import aws from '../images/focus/aws.png'
+import react from '../images/focus/react.png'
 
 // HEAD DATA
 export const headData = {
@@ -31,7 +41,7 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: project,
+    img: goldman,
     title: 'Hydra',
     info: 'A J2EE and Spring Micro-service based Trade processing system at Goldman Sachs',
     info2: 'Created Multiple services to onboard new flows/ Supoort existing flows. Wrote logic to add multiple funcationalities on existing flows in Fixed Income and Equities Domain. Collaborated on all stages of development lifecycle, from requirement gathering to production releases. Followed Agile Methodologies and focused on TDD, thereby creating detailed JUnit tests and Alpacas(GS Internal testing framework) for every functionality of the code.',
@@ -39,7 +49,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: project,
+    img: goldman,
     title: 'Kirin',
     info: 'A J2EE, Hibernate and Spring based Delivery Software which renders and sends confirms to clients at Goldman Sachs',
     info2: '',
@@ -64,6 +74,88 @@ export const projectsData = [
     repo: 'https://github.com/AbhijitChatterjee007/PWA_weather-app', // if no repo, the button will not show up
   },
 ];
+
+//EXPERIENCE DATA
+export const experienceData = [
+  {
+  id: nanoid(),
+  img: goldman,
+  title: 'Contingent Java Developer',
+  date: 'May, 2019 - present',
+  info: 'Working at Goldman Sachs, Bangalore office as a contingent java Developer from Infosys Ltd. ',
+  url: 'www.goldmansachs.com'
+},
+{
+  id: nanoid(),
+  img: infosys,
+  title: 'Senior Systems Engineer',
+  date: 'Nov, 2018 - present',
+  info: 'Joined Infosys Ltd. as a freshman from college. Completed the training from Mysore campus with HPF tag. Since, then working at Goldman Sachs, Bangalore as a contingent java developer',
+  url: 'www.infosys.com'
+}];
+
+export const certificationData = [
+  {
+    id: nanoid(),
+    img: mern,
+    info: 'Complete Web Development using MERN Stack',
+    url:'https://drive.google.com/file/d/1GaP4Epu9ChMThPPIponK9PV3teg6NNsF/view?usp=sharing'
+  },
+  {
+    id: nanoid(),
+    img: agile,
+    info: 'Global Agile Certification',
+    url: 'https://drive.google.com/file/d/1IMoGSpEPyEIk8a5ux8mAP3vkS7sHNDE9/view?usp=sharing'
+  },
+  {
+    id: nanoid(),
+    img: software,
+    info: 'Web Development using Java, Spring Hibernate, Angular 4',
+    url: 'https://drive.google.com/file/d/1mfkWkiBVp6O58ea5dWdIYbwjv90w4UbV/view?usp=sharing'
+  },
+  {
+    id: nanoid(),
+    img: pythoncore,
+    info: 'Core Python with Collections and Data Structure',
+    url:'https://drive.google.com/file/d/1PaphE0AIk6GHvzVsWG6ce5HhjdtK3E7U/view?usp=sharing'
+  },
+  {
+    id: nanoid(),
+    img: pythonoops,
+    info: 'OOPs using Python',
+    url:'https://drive.google.com/file/d/1d4LSnDAeSX3ryfLESgQcP72EW4quxPbN/view?usp=sharing'
+  },
+  {
+    id: nanoid(),
+    img: dbms,
+    info: 'DBMS',
+    url: 'https://drive.google.com/file/d/1SP-mhGvCtASkjSVoZC1lOciwIcpR71nM/view?usp=sharing'
+  }
+]
+
+export const focusData = [
+  {
+    id: nanoid(),
+    img: aws,
+    info: 'Amazon Web Services',
+    info2: 'Cloud computing is going to become a neccessity in the coming years. Therefore,  I\'ve started learning my way around cloud and currently preparing for the AWS cloud practitioner certification',
+    url:'https://aws.amazon.com/'
+  },
+  {
+    id: nanoid(),
+    img: react,
+    info: 'Strengthening the front end',
+    info2: 'I\'ve been working a lot on the backend under my current employer. But, in order to stay relevant as a Full stack developer, need to keep upgrading myself on the front-end side though personal proects. I\'m loving REACT at the moment and currently adding 3-D functionalities (three JS)on a webpage has peeked my interest.',
+    url: 'https://reactjs.org/'
+  },
+  {
+    id: nanoid(),
+    img: rpa,
+    info: 'Robotic Process Automation',
+    info2: 'Just like the AWS cloud side, the Robotic Automation Side has also peeked a lot of interest from my side. Currently, going through the RPA foundations program from UI Path',
+    url: 'https://academy.uipath.com/'
+  },
+]
 
 // CONTACT DATA
 export const contactData = {

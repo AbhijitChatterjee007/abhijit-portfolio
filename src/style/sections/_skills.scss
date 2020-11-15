@@ -62,3 +62,14 @@
   font-weight: bold;
   text-transform: uppercase;
 }
+
+.skills__introButtons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+      @include respond(phone) {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+}

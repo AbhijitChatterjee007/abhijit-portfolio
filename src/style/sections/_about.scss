@@ -18,6 +18,20 @@
     clip-path: none;
   }
 
+  .buttons{
+    margin: 10px;
+
+    @include respond(tab-port) {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    @include respond(phone) {
+      font-size: 1.6rem;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+
   .about-wrapper {
     @include respond(phone) {
       padding-bottom: 5rem;
@@ -58,6 +72,7 @@
         @include respond(phone) {
           font-size: 1.6rem;
           text-align: center;
+          flex-direction: column;
         }
       }
 

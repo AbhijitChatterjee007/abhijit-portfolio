@@ -48,7 +48,7 @@ const About = () => {
                 <p className="about-wrapper__info-text">
                   {paragraphThree}
                 </p>
-                <p className="d-flex mt-3">
+                <p className="d-flex mt-3 buttons">
                   <span className="about-wrapper__info-btn">
                     <Link className="cta-btn cta-btn--about" to="projects">
                       Projects
@@ -57,6 +57,11 @@ const About = () => {
                   <span className="about-wrapper__info-btn">
                     <Link className="cta-btn cta-btn--about" to="skills">
                       Skills
+                    </Link>
+                  </span>
+                  <span className="about-wrapper__info-btn">
+                    <Link className="cta-btn cta-btn--about" to="experience">
+                      Experience
                     </Link>
                   </span>
                   <span className="about-wrapper__info-btn">
