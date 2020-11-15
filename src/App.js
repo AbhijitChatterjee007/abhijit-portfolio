@@ -26,6 +26,10 @@ function App() {
     setFooter({ ...footerData });
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
       <Router>

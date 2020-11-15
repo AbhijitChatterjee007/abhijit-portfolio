@@ -23,6 +23,10 @@ export const Skills = () => {
     }
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <section id ="skills">
       <Container className="pt-3 pb-3 container">

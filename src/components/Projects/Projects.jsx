@@ -22,6 +22,10 @@ const Projects = () => {
     }
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <section className="projects" id="projects">
       <Fade bottom duration={1000} delay={1000} distance="30px">
