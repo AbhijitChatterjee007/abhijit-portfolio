@@ -45,13 +45,6 @@
 .card-text {
   align-items: flex-start;
   margin: 20px;
-  background: linear-gradient(
-    to right, 
-    #fff 0%, 
-    #fff 50%, 
-    #02aab0 0%, 
-    #02aab0 100%
-  );
 }
 .button {
   position: sticky;
@@ -73,4 +66,13 @@
         align-items: center;
         flex-direction: column;
       }
+}
+
+.skills__display{
+  width: 100%;
+  justify-content: space-evenly;
+}
+.progress {
+  width: 100%;
+  margin-bottom: 20px;
 }

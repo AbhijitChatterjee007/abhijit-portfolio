@@ -81,10 +81,13 @@ export const Skills = () => {
                       <hr />
                       <Card.Text className="card-text d-flex flex-column">
                         {skills[skill].map((skill, index) => (
-                          <span className="p-2" key={index}>
+                          <span className="skills__display" key={index}>
                             <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
                               <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style"></Image><strong>{skill.skillName}</strong>
                             </a>
+                            <div className="progress">
+                            <div className="progress-bar" role="progressbar" style={{width : `${skill.level}%`, backgroundColor: "#02aab0"}} aria-valuenow={skill.level} aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                           </span>
                         ))}
                       </Card.Text>
