@@ -2,7 +2,6 @@ import HTML5 from "../images/skills/html5.png";
 import CSS3 from "../images/skills/css3.png";
 import BOOTSTRAP from "../images/skills/bootstrap.png";
 import REACT from "../images/skills/react.png";
-import REACT_NATIVE from "../images/skills/react-native.png";
 import REDUX from "../images/skills/redux.png";
 import JQUERY from "../images/skills/jquery.png";
 import GATSBY from "../images/skills/gatsby.png";
@@ -24,7 +23,11 @@ import NETLIFY from "../images/skills/netlify.png";
 import GITHUB_PAGES from "../images/skills/github.png";
 import JAVASCRIPT from "../images/skills/javascript.png";
 import JAVA from "../images/skills/java.png";
-import PYTHON from "../images/skills/python.png";
+import FIREBASE from "../images/skills/firebase.png";
+import UNIX from "../images/skills/linux.png";
+import JIRA from "../images/skills/Jira.png";
+import DROOLS from "../images/skills/drools.png";
+import CONFLUENCE from "../images/skills/confluence.png";
 
 export const skills = {
   frontend: [
@@ -56,19 +59,13 @@ export const skills = {
       link: "https://reactjs.org/",
       imgAltText: "React JS",
       imgSrc: REACT,
-      skillName: "React JS",
+      skillName: "React",
     },
     {
       link: "https://redux.js.org/",
       imgAltText: "Redux",
       imgSrc: REDUX,
       skillName: "Redux",
-    },
-    {
-      link: "https://reactjs.org/",
-      imgAltText: "React Native",
-      imgSrc: REACT_NATIVE,
-      skillName: "React Native",
     },
     {
       link: "https://jquery.com/",
@@ -114,7 +111,7 @@ export const skills = {
       link: "https://spring.io/",
       imgAltText: "Spring",
       imgSrc: SPRING,
-      skillName: "Flask",
+      skillName: "Spring Boot",
     },
     {
       link: "https://Hibernate.org/",
@@ -143,6 +140,12 @@ export const skills = {
       imgAltText: "Netlify",
       imgSrc: NETLIFY,
       skillName: "Netlify",
+    },
+    {
+      link: "https://firebase.google.com/",
+      imgAltText: "Firebase",
+      imgSrc: FIREBASE,
+      skillName: "Firebase",
     },
     {
       link: "https://pages.github.com/",
@@ -220,6 +223,31 @@ export const skills = {
     },
   ],
 
-  miscellaneous: [],
+  miscellaneous: [
+    {
+      link: "https://unix.org/",
+      imgAltText: "Unix",
+      imgSrc: UNIX,
+      skillName: "Unix",
+    },
+    {
+      link: "https://www.atlassian.com/software/jira",
+      imgAltText: "Jira",
+      imgSrc: JIRA,
+      skillName: "Jira",
+    },
+    {
+      link: "https://www.drools.org/",
+      imgAltText: "Drools",
+      imgSrc: DROOLS,
+      skillName: "Drools",
+    },
+    {
+      link: "https://www.atlassian.com/software/confluence",
+      imgAltText: "Confluence",
+      imgSrc: CONFLUENCE,
+      skillName: "Confluence",
+    },
+  ],
   
 };
