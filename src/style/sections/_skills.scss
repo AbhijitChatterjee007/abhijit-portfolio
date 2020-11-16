@@ -27,12 +27,13 @@
 }
 
 .image-style {
-  width: 3em;
-  height: 30px;
-  width: 30px;
+  width: 7rem;
   margin-right: 20px;
   margin-bottom: 20px;
   font-size: 2rem;
+  @include respond(phone) {
+    width: 4rem;
+  }
 }
 
 .font-details-b {
