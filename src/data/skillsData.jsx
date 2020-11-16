@@ -28,6 +28,7 @@ import UNIX from "../images/skills/linux.png";
 import JIRA from "../images/skills/Jira.png";
 import DROOLS from "../images/skills/drools.png";
 import CONFLUENCE from "../images/skills/confluence.png";
+import PYTHON from "../images/skills/python.png";
 
 export const skills = {
   frontend: [
@@ -157,7 +158,7 @@ export const skills = {
   programmingLanguages: [
     {
       link: "https://www.java.com/",
-      imgAltText: "Jaava",
+      imgAltText: "Java",
       imgSrc: JAVA,
       skillName: "Java",
     },
