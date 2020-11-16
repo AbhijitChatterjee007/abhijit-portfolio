@@ -52,51 +52,53 @@ export const Skills = () => {
         <Title title="Skills" />
         <CardDeck className="cardDeck">
           <Row className="d-flex justify-content-center">
-          {(Object.keys(skills)).map( skill =>
-            <Col md={7} lg={7}>
-              <Card className="focus thumbnail rounded mt-2 mb-2">
-                <Fade
-                  right={isDesktop}
-                  bottom={isMobile}
-                  duration={1000}
-                  delay={1000}
-                  distance="30px"
-                >
-
-                  <Tilt
-                    options={{
-                      reverse: false,
-                      max: 8,
-                      perspective: 1000,
-                      scale: 1,
-                      speed: 300,
-                      transition: true,
-                      axis: null,
-                      reset: true,
-                      easing: 'cubic-bezier(.03,.98,.52,.99)',
-                    }}
+            {(Object.keys(skills)).map(skill =>
+              <Col md={7} lg={7}>
+                <Card className="focus thumbnail rounded mt-2 mb-2">
+                  <Fade
+                    right={isDesktop}
+                    bottom={isMobile}
+                    duration={1000}
+                    delay={1000}
+                    distance="30px"
                   >
-                    <Card.Body>
-                      <h4 className="title">{skill}</h4>
-                      <hr />
-                      <Card.Text className="card-text d-flex flex-column">
-                        {skills[skill].map((skill, index) => (
-                          <span className="skills__display" key={index}>
-                            <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
-                              <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style"></Image><strong>{skill.skillName}</strong>
-                            </a>
-                            <div className="progress">
-                            <div className="progress-bar" role="progressbar" style={{width : `${skill.level}%`, backgroundColor: "#02aab0"}} aria-valuenow={skill.level} aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </span>
-                        ))}
-                      </Card.Text>
-                    </Card.Body>
-                  </Tilt>
-                </Fade>
 
-              </Card>
-            </Col>
+                    <Tilt
+                      options={{
+                        reverse: false,
+                        max: 8,
+                        perspective: 1000,
+                        scale: 1,
+                        speed: 300,
+                        transition: true,
+                        axis: null,
+                        reset: true,
+                        easing: 'cubic-bezier(.03,.98,.52,.99)',
+                      }}
+                    >
+                      <Card.Body>
+                        <h4 className="title">{skill}</h4>
+                        <hr />
+                        <Card.Text className="card-text d-flex flex-column">
+                          {skills[skill].map((skill, index) => (
+                            <div className="skills__display">
+                              <span className="p-2" key={index}>
+                                <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
+                                  <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style"></Image><strong>{skill.skillName}</strong>
+                                </a>
+                              </span>
+                              <div className="progress">
+                                <div className="progress-bar" role="progressbar" style={{ width: `${skill.level}%`, backgroundColor: "#02aab0" }} aria-valuenow={skill.level} aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                          ))}
+                        </Card.Text>
+                      </Card.Body>
+                    </Tilt>
+                  </Fade>
+
+                </Card>
+              </Col>
             )})
           </Row>
         </CardDeck>
