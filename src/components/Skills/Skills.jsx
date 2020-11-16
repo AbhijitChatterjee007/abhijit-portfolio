@@ -52,8 +52,8 @@ export const Skills = () => {
         <Title title="Skills" />
         <CardDeck className="cardDeck">
           <Row className="d-flex justify-content-center">
+          {(Object.keys(skills)).map( skill =>
             <Col md={7} lg={7}>
-            {(Object.keys(skills)).map( skill =>
               <Card className="focus thumbnail rounded mt-2 mb-2">
                 <Fade
                   right={isDesktop}
@@ -93,8 +93,8 @@ export const Skills = () => {
                 </Fade>
 
               </Card>
-            )})
             </Col>
+            )})
           </Row>
         </CardDeck>
       </Container>
