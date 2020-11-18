@@ -37,7 +37,7 @@ const Focus = () => {
             </Fade>
             <Container>
                 <div className="focus-wrapper">
-                    <Title title="Currently focussing on the fllowing skills" />
+                    <Title title="Currently focussing on the following skills" />
                     {focus.map((focus) => {
                         const { id, info, info2, url, img } = focus;
                         return (

@@ -82,7 +82,7 @@ export const experienceData = [
   img: goldman,
   title: 'Contingent Java Developer',
   date: 'May, 2019 - present',
-  info: 'Working at Goldman Sachs, Bangalore office as a contingent java Developer from Infosys Ltd. ',
+  info: 'Working at Goldman Sachs, Bangalore office as a contingent Java Developer from Infosys Ltd. ',
   url: 'www.goldmansachs.com'
 },
 {
