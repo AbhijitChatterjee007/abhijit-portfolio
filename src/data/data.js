@@ -138,7 +138,7 @@ export const focusData = [
     id: nanoid(),
     img: aws,
     info: 'Amazon Web Services',
-    info2: 'Cloud computing is going to become a neccessity in the coming years. Therefore,  I\'ve started learning my way around cloud and currently preparing for the AWS cloud practitioner certification',
+    info2: 'Cloud computing has already taken over the market. Therefore,  I\'ve started learning my way around cloud and it\'s full-stack serverless architecture with Lambdas combined with S3 which minimizes the code liability by taking away the backend infrastructure and increases scalability. Currently preparing for the AWS cloud practitioner certification',
     url:'https://aws.amazon.com/'
   },
   {
