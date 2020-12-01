@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
-import { Link } from 'react-router-dom';
 import Tilt from 'react-tilt';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
