@@ -28,13 +28,6 @@ const Focus = () => {
 
     return (
         <section className="projects" id="projects">
-            <Fade bottom duration={1000} delay={1000} distance="30px">
-                <p className="hero-cta">
-                    <Link className="cta-btn cta-btn--hero" to="/skills">
-                        Go back
-              </Link>
-                </p>
-            </Fade>
             <Container>
                 <div className="focus-wrapper">
                     <Title title="Currently focussing on the following skills" />

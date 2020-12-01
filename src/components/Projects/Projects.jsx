@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
-import { Link } from 'react-router-dom';
 import Tilt from 'react-tilt';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
@@ -28,25 +27,6 @@ const Projects = () => {
 
   return (
     <section className="projects" id="projects">
-      <Fade bottom duration={1000} delay={1000} distance="30px">
-        <div className="skills__introButtons">
-          <p className="hero-cta">
-            <Link className="cta-btn cta-btn--hero" to="/">
-              Go back
-              </Link>
-          </p>
-          <p className="hero-cta">
-            <Link className="cta-btn cta-btn--hero" to="/skills">
-              Skills
-              </Link>
-          </p>
-          <p className="hero-cta">
-            <Link className="cta-btn cta-btn--hero" to="/experience">
-              Experience
-              </Link>
-          </p>
-        </div>
-      </Fade>
       <Container>
         <div className="project-wrapper">
           <Title title="Projects" />

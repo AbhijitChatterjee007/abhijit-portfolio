@@ -1,6 +1,4 @@
 import React, { useContext, useEffect, useState } from 'react';
-import Fade from 'react-reveal/Fade';
-import { Link } from 'react-router-dom';
 import { Container, Carousel, Image } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
@@ -20,13 +18,6 @@ function Certificates() {
 
     return (
         <section className="certificates" id="certificates">
-            <Fade bottom duration={1000} delay={1000} distance="30px">
-                <p className="hero-cta">
-                    <Link className="cta-btn cta-btn--hero" to="/skills">
-                        Go back
-              </Link>
-                </p>
-            </Fade>
             <Container className="certificates__container">
                 <Title title="Certificates" />
                 <Carousel className="certificates__carousel" activeIndex={index} onSelect={handleSelect}>

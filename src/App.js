@@ -9,6 +9,7 @@ import Skills from './components/Skills/Skills'
 import Experience from './components/Exprience/Experience'
 import Certificates from './components/Certifications/Certifications'
 import Focus from './components/FocusPage/Focus';
+import Navbar from './components/Navbar/Navbar'
 
 import { PortfolioProvider } from './context/context';
 
@@ -42,6 +43,7 @@ function App() {
   return (
     <PortfolioProvider value={{ hero, about, projects, contact, footer, experience, certificates, focus}}>
       <Router>
+        <Navbar />
         <Switch>
           <Route path="/projects">
             <Projects />

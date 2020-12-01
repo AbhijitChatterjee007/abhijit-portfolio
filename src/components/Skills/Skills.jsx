@@ -31,12 +31,7 @@ export const Skills = () => {
     <section id="skills">
       <Container className="pt-3 pb-3 container">
         <Fade bottom duration={1000} delay={1000} distance="30px">
-          <div className="skills__introButtons">
-            <p className="hero-cta justify-content-center">
-              <Link className="cta-btn cta-btn--hero" to="/">
-                Go back
-              </Link>
-            </p>
+          <div className="skills__introButtons d-flex flex-column">
             <p className="hero-cta justify-content-center">
               <Link className="cta-btn cta-btn--hero" to="/certifications">
                 Want to view Certifications?
