@@ -75,7 +75,7 @@ export const projectsData = [
     info: 'A Facebook UI Clone using React JS and Google FireStore for Auth and Backend functionalities. This is a simple UI clone with Posts functionality where users can update status just like facebook.',
     info2: 'Cloud firestore is used to store the status update data',
     url: '',
-    repo: 'AbhijitChatterjee007/facebook-ui-clone', 
+    repo: 'https://github.com/AbhijitChatterjee007/facebook-clone', 
   },
   {
     id: nanoid(),
@@ -84,7 +84,7 @@ export const projectsData = [
     info: 'A Facebook UI Clone using React JS and Google FireStore for Auth and Backend functionalities. This is a simple UI clone with Posts functionality where users can update status just like facebook.',
     info2: 'Cloud firestore is used to store status update data',
     url: '',
-    repo: 'AbhijitChatterjee007/spotify-ui-clone', 
+    repo: 'https://github.com/AbhijitChatterjee007/spotify-ui-clone', 
   },
   {
     id: nanoid(),
