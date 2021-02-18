@@ -3,14 +3,12 @@ import CSS3 from "../images/skills/css3.png";
 import BOOTSTRAP from "../images/skills/bootstrap.png";
 import REACT from "../images/skills/react.png";
 import REDUX from "../images/skills/redux.png";
-import JQUERY from "../images/skills/jquery.png";
 import GATSBY from "../images/skills/gatsby.png";
 import GRAPHQL from "../images/skills/graphql.png";
 import NODE_JS from "../images/skills/nodejs.png";
 import EXPRESS from "../images/skills/expressjs.png";
 import SPRING from "../images/skills/spring.png";
 import HIBERNATE from "../images/skills/hibernate.png";
-import RESTFUL from "../images/skills/restful.png";
 import ORACLE from "../images/skills/oracle.png";
 import MONGODB from "../images/skills/mongodb.png";
 import SYBASE from "../images/skills/sybase.png";
@@ -23,7 +21,7 @@ import NETLIFY from "../images/skills/netlify.png";
 import GITHUB_PAGES from "../images/skills/github.png";
 import JAVASCRIPT from "../images/skills/javascript.png";
 import JAVA from "../images/skills/java.png";
-import FIREBASE from "../images/skills/firebase.png";
+import FIREBASE from "../images/skills/firebase.png"; 
 import UNIX from "../images/skills/linux.png";
 import JIRA from "../images/skills/Jira.png";
 import DROOLS from "../images/skills/drools.png";
@@ -47,13 +45,6 @@ export const skills = {
       skillName: "CSS3",
     },
     {
-      link: "https://www.javascript.com/",
-      imgAltText: "JavaScript",
-      imgSrc: JAVASCRIPT,
-      level: '75',
-      skillName: "JavaScript",
-    },
-    {
       link: "https://getbootstrap.com/",
       imgAltText: "Bootstrap",
       imgSrc: BOOTSTRAP,
@@ -75,44 +66,23 @@ export const skills = {
       skillName: "Redux",
     },
     {
-      link: "https://jquery.com/",
-      imgAltText: "JQuery",
-      imgSrc: JQUERY,
-      level: '65',
-      skillName: "JQuery",
-    },
-    {
       link: "https://gatsbyjs.com/",
       imgAltText: "Gatsby",
       imgSrc: GATSBY,
-      level: '60',
+      level: '0',
       skillName: "Gatsby js",
     },
     {
       link: "https://graphql.org/",
       imgAltText: "Graph ql",
       imgSrc: GRAPHQL,
-      level: '60',
+      level: '0',
       skillName: "Graph QL",
     },
 
   ],
 
   backend: [
-    {
-      link: "https://nodejs.org/en/",
-      imgAltText: "Node.js",
-      imgSrc: NODE_JS,
-      level: '80',
-      skillName: "Node.js",
-    },
-    {
-      link: "https://expressjs.com/",
-      imgAltText: "Express",
-      imgSrc: EXPRESS,
-      level: '75',
-      skillName: "Express",
-    },
     {
       link: "https://www.java.com/",
       imgAltText: "Java",
@@ -135,11 +105,18 @@ export const skills = {
       skillName: "Hibernate",
     },
     {
-      link: "https://restfulapi.net/",
-      imgAltText: "Restfull",
-      imgSrc: RESTFUL,
-      level: '85',
-      skillName: "Restful",
+      link: "https://nodejs.org/en/",
+      imgAltText: "Node.js",
+      imgSrc: NODE_JS,
+      level: '80',
+      skillName: "Node.js",
+    },
+    {
+      link: "https://expressjs.com/",
+      imgAltText: "Express",
+      imgSrc: EXPRESS,
+      level: '75',
+      skillName: "Express",
     },
   ],
 

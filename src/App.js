@@ -43,7 +43,7 @@ function App() {
   return (
     <PortfolioProvider value={{ hero, about, projects, contact, footer, experience, certificates, focus}}>
       <Router>
-        <Navbar />
+        <Navbar style ={{"position":"sticky", "z-index":100}}/>
         <Switch>
           <Route path="/projects">
             <Projects />
