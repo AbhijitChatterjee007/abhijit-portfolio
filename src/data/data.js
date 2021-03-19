@@ -7,12 +7,12 @@ import imageFb from '../images/imageFb.png'
 import stories from '../images/Stories.jpg'
 import spotify from '../images/spotify.png'
 import mern from '../images/certificates/mern.png'
+import awsCertificate from '../images/certificates/aws.png'
 import agile from '../images/certificates/agile.png'
 import pythoncore from '../images/certificates/pythoncore.png'
 import pythonoops from '../images/certificates/pythonoops.png'
 import software from '../images/certificates/software.png'
 import dbms from '../images/certificates/dbms.png'
-import rpa from '../images/focus/rpa.png'
 import UIPath from '../images/certificates/UIPath.png'
 import aws from '../images/focus/aws.png'
 import react from '../images/focus/react.png'
@@ -47,7 +47,7 @@ export const projectsData = [
     id: nanoid(),
     img: goldman,
     title: 'Hydra',
-    info: 'A J2EE and Spring Micro-service based Trade processing system at Goldman Sachs. Been part of the dev team and successfully migrated a legacy system tjhat has generated over 250million dollars of revenue',
+    info: 'A JAVA micro-service based trade processing system at Goldman Sachs. Been part of the dev team and successfully migrated a legacy system that has generated over 250million dollars of revenue',
     info2: 'Created Multiple services to onboard new flows/ Suport existing flows. Wrote logic to add multiple funcationalities on existing flows in Fixed Income and Equities Domain. Collaborated on all stages of development lifecycle, from requirement gathering to production releases. Followed Agile Methodologies and focused on TDD, thereby creating detailed JUnit tests and Alpacas(GS Internal testing framework) for every functionality of the code.',
     repo: '', 
   },
@@ -56,7 +56,7 @@ export const projectsData = [
     img: goldman,
     title: 'Kirin',
     info: 'A J2EE, Hibernate and Spring based Delivery Software which renders and sends confirms to clients at Goldman Sachs',
-    info2: '',
+    info2: 'Created confirms using JasperSoft and exposed them via rest APIs using Springboot',
     repo: '', 
   },
   {
@@ -128,6 +128,12 @@ export const experienceData = [
 export const certificationData = [
   {
     id: nanoid(),
+    img: awsCertificate,
+    info: 'AWS Developer Associate',
+    url:'https://drive.google.com/file/d/18lN4q4JCW-XBkS9BCgvdVjuQQA6Az81n/view?usp=sharing'
+  },
+  {
+    id: nanoid(),
     img: mern,
     info: 'Complete Web Development using MERN Stack',
     url:'https://drive.google.com/file/d/1GaP4Epu9ChMThPPIponK9PV3teg6NNsF/view?usp=sharing'
@@ -184,13 +190,6 @@ export const focusData = [
     info: 'Strengthening the front end',
     info2: 'I\'ve been working a lot on the backend under my current employer. But, in order to stay relevant as a Full stack developer, need to keep upgrading myself on the front-end side though personal projects. I\'m loving REACT at the moment and currently adding 3-D functionalities (three JS)on a webpage has peeked my interest.',
     url: 'https://reactjs.org/'
-  },
-  {
-    id: nanoid(),
-    img: rpa,
-    info: 'Robotic Process Automation',
-    info2: 'Just like the AWS cloud side, the Robotic Automation Side has also peeked a lot of interest from my side. Currently, going through the RPA foundations program from UI Path',
-    url: 'https://academy.uipath.com/'
   },
 ]
 

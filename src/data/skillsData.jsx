@@ -3,7 +3,6 @@ import CSS3 from "../images/skills/css3.png";
 import BOOTSTRAP from "../images/skills/bootstrap.png";
 import REACT from "../images/skills/react.png";
 import REDUX from "../images/skills/redux.png";
-import GATSBY from "../images/skills/gatsby.png";
 import GRAPHQL from "../images/skills/graphql.png";
 import NODE_JS from "../images/skills/nodejs.png";
 import EXPRESS from "../images/skills/expressjs.png";
@@ -27,6 +26,11 @@ import JIRA from "../images/skills/Jira.png";
 import DROOLS from "../images/skills/drools.png";
 import CONFLUENCE from "../images/skills/confluence.png";
 import PYTHON from "../images/skills/python.png";
+import SPRINGCLOUD from "../images/skills/springcloud.png";
+import NATS from "../images/skills/nats.png";
+import KAFKA from "../images/skills/kafka.png";
+import DOCKER from "../images/skills/docker.png";
+import KUBERNETES from "../images/skills/kubernetes.png";
 
 export const skills = {
   frontend: [
@@ -66,17 +70,10 @@ export const skills = {
       skillName: "Redux",
     },
     {
-      link: "https://gatsbyjs.com/",
-      imgAltText: "Gatsby",
-      imgSrc: GATSBY,
-      level: '0',
-      skillName: "Gatsby js",
-    },
-    {
       link: "https://graphql.org/",
       imgAltText: "Graph ql",
       imgSrc: GRAPHQL,
-      level: '0',
+      level: '60',
       skillName: "Graph QL",
     },
 
@@ -119,38 +116,42 @@ export const skills = {
       skillName: "Express",
     },
   ],
-
-
-  hostingPlatforms: [
-    {
-      link: "https://www.heroku.com/",
-      imgAltText: "Heroku",
-      imgSrc: HEROKU,
-      level: '100',
-      skillName: "Heroku",
-    },
-    {
-      link: "https://www.netlify.com/",
-      imgAltText: "Netlify",
-      imgSrc: NETLIFY,
-      level: '100',
-      skillName: "Netlify",
-    },
-    {
-      link: "https://firebase.google.com/",
-      imgAltText: "Firebase",
-      imgSrc: FIREBASE,
-      level: '100',
-      skillName: "Firebase",
-    },
-    {
-      link: "https://pages.github.com/",
-      imgAltText: "GitHub Pages",
-      imgSrc: GITHUB_PAGES,
-      level: '100',
-      skillName: "GitHub Pages",
-    },
-  ],
+  microservice:[{
+    link: "https://www.spring.io/",
+    imgAltText: "Spring Cloud",
+    imgSrc: SPRINGCLOUD,
+    level: '60',
+    skillName: "Spring Cloud",
+  },
+  {
+    link: "https://www.python.org/",
+    imgAltText: "Docker",
+    imgSrc: DOCKER,
+    level: '60',
+    skillName: "Docker",
+  },
+  {
+    link: "https://www.javascript.com/",
+    imgAltText: "Kubernetes",
+    imgSrc: KUBERNETES,
+    level: '50',
+    skillName: "Kubernetes",
+  },
+  {
+    link: "https://www.javascript.com/",
+    imgAltText: "Kafka",
+    imgSrc: KAFKA,
+    level: '60',
+    skillName: "Kafka",
+  },
+  {
+    link: "https://www.javascript.com/",
+    imgAltText: "NATS",
+    imgSrc: NATS,
+    level: '60',
+    skillName: "NATS",
+  },
+],
   programmingLanguages: [
     {
       link: "https://www.java.com/",
@@ -229,7 +230,36 @@ export const skills = {
       skillName: "Subversion",
     },
   ],
-
+  hostingPlatforms: [
+    {
+      link: "https://www.heroku.com/",
+      imgAltText: "Heroku",
+      imgSrc: HEROKU,
+      level: '100',
+      skillName: "Heroku",
+    },
+    {
+      link: "https://www.netlify.com/",
+      imgAltText: "Netlify",
+      imgSrc: NETLIFY,
+      level: '100',
+      skillName: "Netlify",
+    },
+    {
+      link: "https://firebase.google.com/",
+      imgAltText: "Firebase",
+      imgSrc: FIREBASE,
+      level: '100',
+      skillName: "Firebase",
+    },
+    {
+      link: "https://pages.github.com/",
+      imgAltText: "GitHub Pages",
+      imgSrc: GITHUB_PAGES,
+      level: '100',
+      skillName: "GitHub Pages",
+    },
+  ],
   miscellaneous: [
     {
       link: "https://unix.org/",
