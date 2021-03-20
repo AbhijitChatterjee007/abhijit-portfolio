@@ -6,7 +6,7 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Projects from './components/Projects/Projects'
 import Skills from './components/Skills/Skills'
-import Experience from './components/Exprience/Experience'
+import Experience from './components/Experience/Experience'
 import Certificates from './components/Certifications/Certifications'
 import Focus from './components/FocusPage/Focus';
 import Navbar from './components/Navbar/Navbar'
