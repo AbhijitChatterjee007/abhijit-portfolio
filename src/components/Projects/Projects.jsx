@@ -1,117 +1,71 @@
-import React, { useContext, useEffect, useState } from 'react';
-import Fade from 'react-reveal/Fade';
-import Tilt from 'react-tilt';
-import { Container, Row, Col, Image } from 'react-bootstrap';
-import PortfolioContext from '../../context/context';
-import Title from '../Title/Title';
+import React, { useContext, useEffect, useState} from "react";
+import { Container } from "react-bootstrap";
+import PortfolioContext from "../../context/context";
+import Title from "../Title/Title";
+import Tabs from "@material-ui/core/Tabs";
+import Tab from "@material-ui/core/Tab";
+import ProjectDetails from "./ProjectDetails";
+
+const TabPanel=(project) => {
+  const {title, info, info2, url, repo, img, id, value, index} = project;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`scrollable-prevent-tabpanel-${index}`}
+      aria-labelledby={`scrollable-prevent-tab-${index}`}
+    >
+      {value === index && (
+        <ProjectDetails title={title} info={info} info2={info2} url ={url} repo={repo} img={img} id={id}/>
+      )}
+    </div>
+  );
+}
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
-
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  const [tabIndex, setTabIndex] = useState(0)
+  const [projectKey, setProjectKey] = useState("");
+  const goldman ="Goldman";
+  const aws ="AWS";
+  const mern = "MERN";
+  const facebook ="Facebook";
+  const ui="UI Builds";
+  const next="NEXT JS";
+  const misc = "misc"
+  const tabs = [goldman,aws,mern,facebook ,ui,next, misc ]
 
   useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
+    window.scrollTo(0, 0);
   }, []);
-
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
 
   return (
     <section className="projects" id="projects">
       <Container>
         <div className="project-wrapper">
           <Title title="Projects" />
-          {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
-            return (
-              <Row key={id}>
-                <Col lg={4} sm={12}>
-                  <Fade
-                    left={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={500}
-                    distance="30px"
-                  >
-                    <div className="project-wrapper__text">
-                      <h3 className="project-wrapper__text-title">{title}</h3>
-                      <div>
-                        <p>
-                          {info}
-                        </p>
-                        <p className="mb-4">{info2 || ''}</p>
-                      </div>
-                      {url && (<a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
-                      >
-                        See Live
-                      </a>
-                      )}
-
-                      {repo && (
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
-                          href={repo}
-                        >
-                          Source Code
-                        </a>
-                      )}
-                    </div>
-                  </Fade>
-                </Col>
-                <Col lg={8} md={8} sm={10}>
-                  <Fade
-                    right={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={1000}
-                    distance="30px"
-                  >
-                    <div className="project-wrapper__image">
-                      <a
-                        href={url}
-                        target="_blank"
-                        aria-label="Project Link"
-                        rel="noopener noreferrer"
-                      >
-                        <Tilt
-                          options={{
-                            reverse: false,
-                            max: 8,
-                            perspective: 1000,
-                            scale: 1,
-                            speed: 300,
-                            transition: true,
-                            axis: null,
-                            reset: true,
-                            easing: 'cubic-bezier(.03,.98,.52,.99)',
-                          }}
-                        >
-                          <div data-tilt className="thumbnail rounded">
-                            <Image className="project__image"alt="project photo" src={img} />
-                          </div>
-                        </Tilt>
-                      </a>
-                    </div>
-                  </Fade>
-                </Col>
-              </Row>
-            );
+          <Tabs
+            className="tabStyles"
+            value={tabIndex}
+            onChange={(e, index) => {
+              setTabIndex(index)}}
+          >
+          {tabs.map(tab => {
+            return <Tab className="tab" label={tab} onClick = {() =>{setProjectKey(tab)}}/>
           })}
+          </Tabs>
+          {
+            projects.map((project) => {
+            return (              
+              project?.map((item) => {
+                const {key, title, info, info2, url, repo, img, id} = item;
+                return (projectKey.toUpperCase().trim() === key.toUpperCase().trim() &&
+                <TabPanel index={tabIndex} value={tabIndex} title={title} info={info} info2={info2} url ={url} repo={repo} img={img} id={id}/>
+            );
+              }) 
+           
+          )})}
         </div>
       </Container>
     </section>

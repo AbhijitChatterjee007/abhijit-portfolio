@@ -31,6 +31,15 @@ import NATS from "../images/skills/nats.png";
 import KAFKA from "../images/skills/kafka.png";
 import DOCKER from "../images/skills/docker.png";
 import KUBERNETES from "../images/skills/kubernetes.png";
+import AMPLIFY from "../images/skills/amplify.png";
+import S3 from "../images/skills/s3.png";
+import EC2 from "../images/skills/ec2.png";
+import COGNITO from "../images/skills/cognito.png";
+import SES from "../images/skills/ses.png";
+import DYNAMO from "../images/skills/DynamoDB.png";
+import AWSGRAPHQL from "../images/skills/awsgraphql.png";
+import LAMBDA from "../images/skills/lambda.png";
+
 
 export const skills = {
   frontend: [
@@ -124,33 +133,91 @@ export const skills = {
     skillName: "Spring Cloud",
   },
   {
-    link: "https://www.python.org/",
+    link: "https://www.docker.com/",
     imgAltText: "Docker",
     imgSrc: DOCKER,
     level: '60',
     skillName: "Docker",
   },
   {
-    link: "https://www.javascript.com/",
+    link: "https://kubernetes.io/",
     imgAltText: "Kubernetes",
     imgSrc: KUBERNETES,
     level: '50',
     skillName: "Kubernetes",
   },
   {
-    link: "https://www.javascript.com/",
+    link: "https://kafka.apache.org/",
     imgAltText: "Kafka",
     imgSrc: KAFKA,
     level: '60',
     skillName: "Kafka",
   },
   {
-    link: "https://www.javascript.com/",
+    link: "https://nats.io/",
     imgAltText: "NATS",
     imgSrc: NATS,
     level: '60',
     skillName: "NATS",
   },
+],
+
+aws:[{
+  link: "https://aws.amazon.com/",
+  imgAltText: "AMPLIFY",
+  imgSrc: AMPLIFY,
+  level: '60',
+  skillName: "AWS Amplify",
+},
+{
+  link: "https://aws.amazon.com/",
+  imgAltText: "COGNITO",
+  imgSrc: COGNITO,
+  level: '60',
+  skillName: "Cognito",
+},
+{
+  link: "https://aws.amazon.com/",
+  imgAltText: "S3",
+  imgSrc: S3,
+  level: '50',
+  skillName: "S3",
+},
+{
+  link: "https://aws.amazon.com/",
+  imgAltText: "AWSGRAPHQL",
+  imgSrc: AWSGRAPHQL,
+  level: '60',
+  skillName: "AWS GraphQL",
+},
+{
+  link: "https://aws.amazon.com/",
+  imgAltText: "LAMBDA",
+  imgSrc: LAMBDA,
+  level: '60',
+  skillName: "Lambda",
+},
+{
+  link: "https://aws.amazon.com/",
+  imgAltText: "SES",
+  imgSrc: SES,
+  level: '60',
+  skillName: "Simple Email Service",
+},
+{
+  link: "https://aws.amazon.com/",
+  imgAltText: "DYNAMO",
+  imgSrc: DYNAMO,
+  level: '50',
+  skillName: "DynamoDB",
+},
+{
+  link: "https://aws.amazon.com/",
+  imgAltText: "EC2",
+  imgSrc: EC2,
+  level: '60',
+  skillName: "EC2",
+}
 ],
   programmingLanguages: [
     {

@@ -6,6 +6,9 @@ import project2 from '../images/project-2.png'
 import imageFb from '../images/imageFb.png'
 import stories from '../images/Stories.jpg'
 import spotify from '../images/spotify.png'
+import projectAws from '../images/projectAws.png'
+import pokemon from '../images/pokemon.png'
+import pizza from '../images/pizza.png'
 import mern from '../images/certificates/mern.png'
 import awsCertificate from '../images/certificates/aws.png'
 import agile from '../images/certificates/agile.png'
@@ -36,30 +39,35 @@ export const heroData = {
 export const aboutData = {
   img: 'profile.jpg',
   paragraphOne: 'Agile Certified , experienced, versatile and self-accountable full-stack software developer versed in latest technologies and various programming languages.',
-  paragraphTwo: ' With 2.2 years of development experience, adept at picking up technologies, driven to exceed customer expectations with cutting-edge applications.',
+  paragraphTwo: ' With 2.5 years of development experience, adept at picking up technologies, driven to exceed customer expectations with cutting-edge applications.',
   paragraphThree: ' Skilled in client consulting and have strong inter-personal skills. Able to communicate effectively to management, users, developers and cross-functional team members.',
   resume: 'https://drive.google.com/file/d/1lzaWF5dWjv97cZkspRVye1tpc1MaAYCo/view?usp=sharing',
 };
 
 // PROJECTS DATA
 export const projectsData = [
-  {
+  [
+    {key: "Goldman",
     id: nanoid(),
     img: goldman,
     title: 'Hydra',
     info: 'A JAVA micro-service based trade processing system at Goldman Sachs. Been part of the dev team and successfully migrated a legacy system that has generated over 250million dollars of revenue',
-    info2: 'Created Multiple services to onboard new flows/ Suport existing flows. Wrote logic to add multiple funcationalities on existing flows in Fixed Income and Equities Domain. Collaborated on all stages of development lifecycle, from requirement gathering to production releases. Followed Agile Methodologies and focused on TDD, thereby creating detailed JUnit tests and Alpacas(GS Internal testing framework) for every functionality of the code.',
+    info2: 'Gathered thorough knowledge on Event-Driven micro-service architecture.Created Multiple services to onboard new flows/ Suport existing flows. Wrote logic to add multiple funcationalities on existing flows in Fixed Income and Equities Domain. Collaborated on all stages of development lifecycle, from requirement gathering to production releases. Followed Agile Methodologies and focused on TDD, thereby creating detailed JUnit tests and Alpacas(GS Internal testing framework) for every functionality of the code.',
     repo: '', 
   },
   {
+    key: "Goldman",
     id: nanoid(),
     img: goldman,
     title: 'Kirin',
     info: 'A J2EE, Hibernate and Spring based Delivery Software which renders and sends confirms to clients at Goldman Sachs',
-    info2: 'Created confirms using JasperSoft and exposed them via rest APIs using Springboot',
+    info2: 'Created confirms using JasperSoft and exposed them via rest APIs using Springboot. Wrote Stored Procedures to fetch the data from various reference data systems.',
     repo: '', 
-  },
-  {
+  }
+    ],
+   [ 
+     {
+     key : "MERN",
     id: nanoid(),
     img: stories,
     title: 'Stories- A Full Stack MERN Application',
@@ -67,8 +75,10 @@ export const projectsData = [
     info2: 'The Auth functionality is handled by using JWT and Google login. The database used is Mongo DB',
     url: 'https://stories-abhijit.netlify.app/',
     repo: 'https://github.com/AbhijitChatterjee007/Stories', 
-  },
-  {
+  }],
+  [ 
+    {
+    key : "Facebook",
     id: nanoid(),
     img: imageFb,
     title: 'FaceBook Clone',
@@ -76,17 +86,63 @@ export const projectsData = [
     info2: 'Cloud firestore is used to store the status update data',
     url: '',
     repo: 'https://github.com/AbhijitChatterjee007/facebook-clone', 
-  },
-  {
+  }],
+  [ 
+    {
+    key : "AWS",
+    id: nanoid(),
+    img: projectAws,
+    title: 'MarketPlace',
+    info: 'Created a marketplace application where users can sign-up/log in and create their own product or buy existing products from the marketplace. This app was inspired by Udemy.',
+    info2: 'Tech used: S3 for hosting and content storage, DynamoDB for storing user/product data, GraphQL for API, Cognito to manage user-pool and authentication, Stripe for payment functionality, Lambda to process charges, SES for sending an invoice mails.',
+    url: 'https://d38iryxpfkv00s.cloudfront.net/',
+    repo: '', 
+  }],
+  [ 
+    {
+    key : "NEXT JS",
+    id: nanoid(),
+    title: 'Working on some refactors and clean ups. Will post soon.. :)',
+    info: '',
+    info2: '',
+    url: '',
+    repo: '', 
+  }],
+  [ 
+    {
+    key : "UI Builds",
     id: nanoid(),
     img: spotify,
     title: 'Spotify UI clone',
-    info: 'A Facebook UI Clone using React JS and Google FireStore for Auth and Backend functionalities. This is a simple UI clone with Posts functionality where users can update status just like facebook.',
-    info2: 'Cloud firestore is used to store status update data',
+    info: 'A Spotify UI Clone using React JS and Spotify API for Auth functionalities',
+    info2: 'This UI looks exactly same as the spotify web version and you can find all your playlists and songs in the ui after login in',
     url: '',
     repo: 'https://github.com/AbhijitChatterjee007/spotify-ui-clone', 
   },
+
   {
+    key : "UI Builds",
+    id: nanoid(),
+    img: pokemon,
+    title: 'POKEMON',
+    info: 'A 3D UI build created using React JS and React3Fiber. A cool part time build.',
+    info2: 'Please do check it out.',
+    url: 'https://pokemons-by-abhijit.netlify.app/',
+    repo: 'https://github.com/AbhijitChatterjee007/Pokemons', 
+  },
+  {
+    key : "UI Builds",
+    id: nanoid(),
+    img: pizza,
+    title: 'Avomax\'s Pizza',
+    info: 'An industry standard UI Build for a pizza start-up created using React JS and Styled Components with a bunch of cool effects and animations. The site is fully mobile responsive.',
+    info2: 'Please do check it out.',
+    url: 'https://avomax-pizza.netlify.app/',
+    repo: '', 
+  }],
+  [ 
+    {
+    key : "misc",
     id: nanoid(),
     img: project1,
     title: 'Voice Controlled News Application',
@@ -96,6 +152,7 @@ export const projectsData = [
     repo: 'https://github.com/AbhijitChatterjee007/voice-news-app', 
   },
   {
+    key : "misc",
     id: nanoid(),
     img: project2,
     title: 'PWA Weather Application',
@@ -103,7 +160,7 @@ export const projectsData = [
     info2: '',
     url: 'https://abhijit-pwa-weatherapp.netlify.app/',
     repo: 'https://github.com/AbhijitChatterjee007/PWA_weather-app',
-  },
+  }]
 ];
 
 //EXPERIENCE DATA
@@ -181,7 +238,7 @@ export const focusData = [
     id: nanoid(),
     img: aws,
     info: 'Amazon Web Services',
-    info2: 'Cloud computing has already taken over the market. Therefore,  I\'ve started learning my way around cloud and it\'s full-stack serverless architecture with Lambdas combined with S3 which minimizes the code liability by taking away the backend infrastructure and increases scalability. Currently preparing for the AWS cloud practitioner certification',
+    info2: 'Cloud computing has already taken over the market. Therefore,  I\'ve started learning my way around cloud and it\'s full-stack serverless architecture with Lambdas combined with S3 which minimizes the code liability by taking away the backend infrastructure and increases scalability. Currently preparing for the AWS Developer Associate certification',
     url:'https://aws.amazon.com/'
   },
   {
