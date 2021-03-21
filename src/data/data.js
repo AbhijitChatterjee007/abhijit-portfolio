@@ -76,17 +76,7 @@ export const projectsData = [
     url: 'https://stories-abhijit.netlify.app/',
     repo: 'https://github.com/AbhijitChatterjee007/Stories', 
   }],
-  [ 
-    {
-    key : "Facebook",
-    id: nanoid(),
-    img: imageFb,
-    title: 'FaceBook Clone',
-    info: 'A Facebook UI Clone using React JS and Google FireStore for Auth and Backend functionalities. This is a simple UI clone with Posts functionality where users can update status just like facebook.',
-    info2: 'Cloud firestore is used to store the status update data',
-    url: '',
-    repo: 'https://github.com/AbhijitChatterjee007/facebook-clone', 
-  }],
+
   [ 
     {
     key : "AWS",
@@ -98,17 +88,16 @@ export const projectsData = [
     url: 'https://d38iryxpfkv00s.cloudfront.net/',
     repo: '', 
   }],
-  [ 
-    {
-    key : "NEXT JS",
+  [ {
+    key : "UI Builds",
     id: nanoid(),
-    title: 'Working on some refactors and clean ups. Will post soon.. :)',
-    info: '',
-    info2: '',
-    url: '',
+    img: pizza,
+    title: 'Avomax\'s Pizza',
+    info: 'An industry standard UI Build for a pizza start-up created using React JS and Styled Components with a bunch of cool effects and animations. The site is fully mobile responsive.',
+    info2: 'Please do check it out.',
+    url: 'https://avomax-pizza.netlify.app/',
     repo: '', 
-  }],
-  [ 
+  },
     {
     key : "UI Builds",
     id: nanoid(),
@@ -119,7 +108,16 @@ export const projectsData = [
     url: '',
     repo: 'https://github.com/AbhijitChatterjee007/spotify-ui-clone', 
   },
-
+  {
+    key : "UI Builds",
+    id: nanoid(),
+    img: imageFb,
+    title: 'FaceBook Clone',
+    info: 'A Facebook UI Clone using React JS and Google FireStore for Auth and Backend functionalities. This is a simple UI clone with Posts functionality where users can update status just like facebook.',
+    info2: 'Cloud firestore is used to store the status update data',
+    url: '',
+    repo: 'https://github.com/AbhijitChatterjee007/facebook-clone', 
+  },
   {
     key : "UI Builds",
     id: nanoid(),
@@ -129,16 +127,6 @@ export const projectsData = [
     info2: 'Please do check it out.',
     url: 'https://pokemons-by-abhijit.netlify.app/',
     repo: 'https://github.com/AbhijitChatterjee007/Pokemons', 
-  },
-  {
-    key : "UI Builds",
-    id: nanoid(),
-    img: pizza,
-    title: 'Avomax\'s Pizza',
-    info: 'An industry standard UI Build for a pizza start-up created using React JS and Styled Components with a bunch of cool effects and animations. The site is fully mobile responsive.',
-    info2: 'Please do check it out.',
-    url: 'https://avomax-pizza.netlify.app/',
-    repo: '', 
   }],
   [ 
     {
@@ -160,7 +148,17 @@ export const projectsData = [
     info2: '',
     url: 'https://abhijit-pwa-weatherapp.netlify.app/',
     repo: 'https://github.com/AbhijitChatterjee007/PWA_weather-app',
-  }]
+  }],
+  [ 
+    {
+    key : "NEXT JS",
+    id: nanoid(),
+    title: 'Working on some refactors and clean ups. Will post soon.. :)',
+    info: '',
+    info2: '',
+    url: '',
+    repo: '', 
+  }],
 ];
 
 //EXPERIENCE DATA

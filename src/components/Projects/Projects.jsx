@@ -26,15 +26,14 @@ const TabPanel=(project) => {
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
   const [tabIndex, setTabIndex] = useState(0)
-  const [projectKey, setProjectKey] = useState("");
+  const [projectKey, setProjectKey] = useState("goldman");
   const goldman ="Goldman";
   const aws ="AWS";
   const mern = "MERN";
-  const facebook ="Facebook";
   const ui="UI Builds";
   const next="NEXT JS";
   const misc = "misc"
-  const tabs = [goldman,aws,mern,facebook ,ui,next, misc ]
+  const tabs = [goldman,aws,mern ,ui,next, misc ]
 
   useEffect(() => {
     window.scrollTo(0, 0);
