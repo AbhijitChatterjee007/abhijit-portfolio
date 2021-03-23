@@ -17,7 +17,7 @@ const Slider = ({ array, showIcons }) => {
   useEffect(() => {
     setTimeout(() => {
     setCurrent(current === length - 1 ? 0 : current + 1);
-  }, 2000)}, [current, length])
+  }, 4500)}, [current, length])
 
   return (
     <div className="slider">
