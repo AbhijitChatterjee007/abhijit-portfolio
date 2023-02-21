@@ -1,4 +1,4 @@
-[Resume Live](https://abhijit-resume.netlify.app/).
+[Resume Live](https://abhijit-chatterjee.netlify.app/).
 
 My own resume/portfolio created using React and it's multiple libraries.
 
